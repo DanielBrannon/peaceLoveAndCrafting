@@ -1,0 +1,20 @@
+html { 
+    background: url(https://2htnkv3f2kpw37wyc23nua5q-wpengine.netdna-ssl.com/assets/2020/08/sonata-header-background-scaled.jpeg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+.Home {
+  display: flex;
+  justify-self: center;
+  max-width: 1500px;
+}
+.homeRow {
+  display: flex;
+  z-index: 1;
+  margin: 0 5px;
+}
+h2 {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: row;
+}

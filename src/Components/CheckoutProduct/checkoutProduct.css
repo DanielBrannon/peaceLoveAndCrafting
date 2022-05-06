@@ -1,0 +1,18 @@
+.checkoutProduct {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.checkoutProduct > img {
+    max-width: 100px;
+    width: 100%;
+    object-fit: contain;
+    max-height: 150px;
+    margin-bottom: 10px;
+    align-items: center;
+    margin: 5px 10px;
+}
+
+.checkoutProductInfo > button {
+    width: fit-content;
+}

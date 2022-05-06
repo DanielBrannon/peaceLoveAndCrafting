@@ -1,5 +1,11 @@
+* {
+  margin: 0;
+}
+
 .App {
   text-align: center;
+  margin: 0;
+  height: 100%;
 }
 
 .App-logo {
@@ -35,4 +41,7 @@
   to {
     transform: rotate(360deg);
   }
+}
+.Home {
+  margin: 0
 }
