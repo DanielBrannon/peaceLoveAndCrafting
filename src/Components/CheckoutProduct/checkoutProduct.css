@@ -1,7 +1,6 @@
 .checkoutProduct {
     display: flex;
     align-items: center;
-    justify-content: left;
 }
 .checkoutProduct > img {
     max-width: 100px;
