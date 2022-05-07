@@ -10,11 +10,11 @@ import Register from './Components/Register/Register';
 
 function App() {
 
-const [{}, dispatch] = useStateValue();
+const [state, dispatch] = useStateValue();
 
   useEffect(() => {
     auth.onAuthStateChanged(authUser => {
-
+      console.log(state)
       if (authUser) {
           dispatch({
             type: 'setUser',
