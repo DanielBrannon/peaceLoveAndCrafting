@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './Religious.css';
 import Product from '../Product/Product';
 import Crucifixion from './Assets/Screenshot 2022-04-22 141216.png';

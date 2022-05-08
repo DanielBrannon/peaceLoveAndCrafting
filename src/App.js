@@ -30,7 +30,7 @@ const [ dispatch] = useStateValue();
         })
       }
     })
-  }, [authUser])
+  }, [dispatch])
 
   return (
       <div className="App">
