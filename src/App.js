@@ -10,11 +10,11 @@ import Register from './Components/Register/Register';
 
 function App() {
 
-const [state, dispatch] = useStateValue();
+const [ dispatch] = useStateValue();
 
   useEffect(() => {
     auth.onAuthStateChanged(authUser => {
-      console.log(state)
+
       if (authUser) {
           dispatch({
             type: 'setUser',
@@ -30,7 +30,7 @@ const [state, dispatch] = useStateValue();
         })
       }
     })
-  }, [])
+  }, [authUser])
 
   return (
       <div className="App">

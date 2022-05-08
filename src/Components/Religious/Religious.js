@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import './Religious.css';
 import Product from '../Product/Product';
 import Crucifixion from './Assets/Screenshot 2022-04-22 141216.png';
@@ -6,8 +6,7 @@ import Cross from './Assets/Screenshot 2022-04-22 143340.png';
 import {useStateValue} from '../../StateProvider';
 
 function Religious() {
-  const [{basket}, dispatch] = useStateValue();
-  const [state, setState] = useState(15);
+  const [{basket}] = useStateValue();
   return (
     <div>
       <h2>Religious</h2>

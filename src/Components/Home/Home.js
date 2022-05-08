@@ -5,7 +5,6 @@ import Cards from '../Cards/Cards';
 import Vinyl from '../Vinyl/Vinyl';
 import Layered from '../Layered/Layered';
 import BirdToys from '../BirdToys/BirdToys';
-import Header from '../Header/Header';
 
 function Home() {
   return (

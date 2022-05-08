@@ -6,7 +6,7 @@ import {useStateValue} from '../../StateProvider'
 
 
 function Checkout() {
-  const [{basket}, dispatch] = useStateValue();
+  const [{basket}] = useStateValue();
   return (
     <div className='checkout'>
         <div className="checkoutLeft">
@@ -19,6 +19,7 @@ function Checkout() {
               image={item.image}
               price={item.price}
               id={item.id}
+              alt=''
               />
             ))}
         </div>
