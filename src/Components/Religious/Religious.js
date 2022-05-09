@@ -6,7 +6,7 @@ import Cross from './Assets/Screenshot 2022-04-22 143340.png';
 import {useStateValue} from '../../StateProvider';
 
 function Religious() {
-  const [{basket}] = useStateValue();
+  const [{basket}, dispatch] = useStateValue();
   return (
     <div>
       <h2>Religious</h2>
