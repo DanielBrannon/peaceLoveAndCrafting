@@ -12,6 +12,7 @@ function Header() {
 
     const handleAuthentication = () => {
         if (user) {
+            console.log(user)
             auth.signOut();
         }
     }

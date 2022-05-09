@@ -5,23 +5,23 @@ import Checkout from './Components/Checkout/Checkout.js';
 import Login from './Components/Login/Login';
 import { useEffect } from 'react';
 import { auth } from './firebase';
-import {useStateValue} from './StateProvider'
+import { useStateValue } from './StateProvider';
 import Register from './Components/Register/Register';
 
 function App() {
 
-const [ dispatch] = useStateValue();
-
+  const [{basket}, dispatch] = useStateValue();
   useEffect(() => {
     auth.onAuthStateChanged(authUser => {
 
       if (authUser) {
-          dispatch({
+         dispatch({
             type: 'setUser',
             user: authUser,
             displayName: authUser.displayName,
             email: authUser.email
           })
+        
       } else {
         dispatch({
           type: 'setUser',
@@ -30,7 +30,7 @@ const [ dispatch] = useStateValue();
         })
       }
     })
-  }, [dispatch])
+  }, [])
 
   return (
       <div className="App">

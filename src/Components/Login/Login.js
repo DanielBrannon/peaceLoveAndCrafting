@@ -13,7 +13,6 @@ function Login() {
         auth
             .signInWithEmailAndPassword(email, password)
             .then((auth) => {
-                console.log(auth)
                 if (auth) {
                     history('/')
                 }
