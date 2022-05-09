@@ -7,6 +7,7 @@ import {useStateValue} from '../../StateProvider';
 
 function Religious() {
   const [{basket}, dispatch] = useStateValue();
+  console.log(dispatch)
   return (
     <div>
       <h2>Religious</h2>

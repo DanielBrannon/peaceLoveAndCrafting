@@ -5,7 +5,7 @@ import {useStateValue} from '../../StateProvider'
 function Product({ name, image, price1, price2, price, id }) {
   const [{basket}, dispatch] = useStateValue();
   const [state, setState] = useState({selectedOption: 'price1', price: price1})
-  
+  console.log(basket)
   useEffect(() => {
 
   }, [state])
