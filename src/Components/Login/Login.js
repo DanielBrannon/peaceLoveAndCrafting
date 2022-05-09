@@ -19,6 +19,7 @@ function Login() {
             })
     }
 
+    
     const register = e => {
         e.preventDefault();
         history('/register')
